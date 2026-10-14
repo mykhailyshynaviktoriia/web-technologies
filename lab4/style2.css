@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    color: #333333;
+}
+ul a {
+    color: purple;
+}
+.main-menu > li > a {
+    color: green;
+}
+.fruit-list {
+    list-style-type: none;
+}
+.square-list {
+    list-style-type: square;
+}
+.veg-list {
+    list-style-type: '\2713';
+}
+.veg-list li {
+    padding-left: 5px;
+}
+.square-list a {
+    text-decoration: none;
+}
+ol {
+    list-style-position: inside;
+    margin-top: 5px;
+}
