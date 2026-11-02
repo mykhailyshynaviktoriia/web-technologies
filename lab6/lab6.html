@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 1 - Варіант 5</title>
+    <style>
+       
+        .container {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            margin: 50px auto;
+        }
+
+     
+        .block {
+            width: 250px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 2px solid #000;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            position: absolute;
+        }
+
+     
+        .block-green {
+            background-color: #00b050;
+            color: #000;
+            top: 100px;
+            left: 50px;
+            z-index: 2; 
+        }
+
+     
+        .block-blue-top {
+            background-color: #418ab3;
+            color: #fff;
+            top: 40px;
+            left: 250px;
+            z-index: 1;
+        }
+
+    
+        .block-blue-bottom {
+            background-color: #418ab3;
+            color: #fff;
+            top: 180px;
+            left: 250px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+     
+        <div class="block block-green">
+            Текст всередині блоку
+        </div>
+
+   
+        <div class="block block-blue-top">
+            Текст всередині блоку
+        </div>
+
+
+        <div class="block block-blue-bottom">
+            Текст всередині блоку
+        </div>
+    </div>
+
+</body>
+</html>

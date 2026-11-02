@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #555555;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-link .material-icons,
+.user-avatar .material-icons {
+    font-size: 24px;
+    color: #666;
+}
+
+.popup-checkbox,
+.more-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.popup-button .material-icons {
+    font-size: 24px;
+    color: #555;
+}
+
+.popup-container {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 320px;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: all 0.2s ease-in-out;
+    z-index: 100;
+}
+
+.popup-container::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: 22px;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
+    transform: rotate(45deg);
+}
+.popup-checkbox:checked ~ .popup-container {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.popup-content {
+    max-height: 360px;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+
+.popup-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 5px;
+}
+
+.app-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: background-color 0.2s;
+}
+
+
+.app-icon {
+    font-size: 38px !important;
+    margin-bottom: 6px;
+}
+
+.icon-calendar { color: #4285f4; }
+.icon-mail { color: #ea4335; }
+.icon-news { color: #fbbc05; }
+.icon-map { color: #34a853; }
+.icon-files { color: #fbbc05; }
+.icon-contacts { color: #4285f4; }
+.icon-translate { color: #4285f4; }
+.icon-videos { color: #ea4335; }
+.icon-search { color: #4285f4; }
+.icon-photo { color: #ea4335; }
+.icon-apps { color: #34a853; }
+.icon-doc { color: #4285f4; }
+.icon-chat { color: #0f9d58; }
+.icon-school { color: #f4b400; }
+.icon-star { color: #4285f4; }
+.icon-mars { color: #db4437; }
+.icon-blogs { color: #ff6d00; }
+.icon-promos { color: #4285f4; }
+
+.app-title {
+    font-size: 12px;
+    color: #444444;
+}
+
+.app-item.active-item {
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.more-grid {
+    display: none;
+    margin-top: 15px;
+    border-top: 1px solid #eeeeee;
+    padding-top: 15px;
+}
+
+.more-checkbox:checked ~ .popup-content .more-grid {
+    display: grid;
+}
+
+.more-text-active {
+    display: none;
+}
+
+.more-checkbox:checked ~ .popup-more-button .more-text-default {
+    display: none;
+}
+
+.more-checkbox:checked ~ .popup-more-button .more-text-active {
+    display: inline;
+}
+
+
+.popup-more-button {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    color: #5f6368;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.header-link:hover,
+.popup-button:hover,
+.app-item:hover,
+.popup-more-button:hover {
+    background-color: #f1f3f4;
+}
+
+.header-link:focus,
+.popup-button:focus,
+.app-item:focus,
+.popup-more-button:focus,
+.popup-content:focus {
+    outline: 2px solid #4285f4;
+    outline-offset: 1px;
+}
