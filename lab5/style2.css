@@ -1,0 +1,93 @@
+body {
+    background-color: #fceade;
+    font-family: Arial, sans-serif;
+    color: #4a3525;
+    padding: 20px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #8c3831;
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: 1px solid #d19c96;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #faf5f3;
+}
+
+legend {
+    font-weight: bold;
+    color: #8c3831;
+    background-color: #fff;
+    padding: 3px 8px;
+    border: 1px solid #d19c96;
+    border-radius: 4px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+label {
+    font-weight: bold;
+    color: #5c1e19;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+fieldset span {
+    display: block;
+    font-weight: bold;
+    color: #5c1e19;
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #d19c96;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #8c3831;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+button:hover {
+    background-color: #5c1e19;
+}
+
+button[type="reset"] {
+    background-color: #d19c96;
+    color: #4a3525;
+}

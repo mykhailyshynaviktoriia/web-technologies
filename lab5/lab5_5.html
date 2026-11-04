@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 5</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+    <h2>1. box-sizing</h2>
+    <div>
+        box-sizing: content-box;<br>
+        Загальна ширина: 350px
+    </div>
+    <div>
+        box-sizing: border-box;<br>
+        Загальна ширина: 300px
+    </div>
+
+    <hr>
+
+    <h2>2. overflow</h2>
+    <div>
+        <strong>overflow: visible;</strong> Цей текст дуже довгий і він буде виходити за межі блоку, оскільки значення visible не обрізає вміст і не створює смуги прокрутки.
+    </div>
+    <div>
+        <strong>overflow: hidden;</strong> Цей текст дуже довгий і він буде обрізатися по краю рамки блоку, зайвий вміст стає невидимим.
+    </div>
+    <div>
+        <strong>overflow: scroll;</strong> Цей текст дуже довгий, тут завжди відображаються смуги прокрутки для перегляду всього тексту.
+    </div>
+    <div>
+        <strong>overflow: auto;</strong> Цей текст дуже довгий, смуга прокрутки з'явиться автоматично тільки тоді, коли вміст не поміщається в блоки.
+    </div>
+
+    <hr>
+
+    <h2>3. display (Меню)</h2>
+    <nav>
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Послуги</a></li>
+            <li class="hidden-item"><a href="#">Архів</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

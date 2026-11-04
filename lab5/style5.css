@@ -1,0 +1,122 @@
+body {
+    background-color: #1b2441; 
+    background-image: url('background.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #1b365d;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px;
+}
+
+/* 
+   ПОЯСНЕННЯ :
+   Коли вікно браузера стає вужчим за min-width (320px), контейнер більше не стискається, 
+   і на сторінці з'являється горизонтальна смуга прокручування браузера, щоб уникнути пошкодження верстки.
+*/
+
+h2, h3 {
+    color: #2b6cb0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #cbd5e0;
+    margin: 25px 0;
+}
+.inline-div {
+    display: inline; 
+    width: 200px;   
+    height: 100px;   
+    background-color: #bee3f8;
+    margin: 5px;
+    padding: 5px;
+}
+/* 
+   Пояснення: властивості width та height не діють на inline-елементи, 
+   оскільки вони займають ширину лише свого вмісту.
+*/
+
+.block-span {
+    display: block;  
+    width: 150px;    
+    background-color: #90cdf4;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.repeat-block {
+    height: 200px;
+    border: 2px solid #2b6cb0;
+    margin-bottom: 15px;
+    background-image: url('background.jpg');
+    background-color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    color: #2c5282;
+}
+
+.rep-x { background-repeat: repeat-x; }
+.rep-y { background-repeat: repeat-y; }
+.rep-space { background-repeat: space; }
+.rep-round { background-repeat: round; }
+
+/* 
+   ПОЯСНЕННЯ (різниця між space та round):
+   - space: зображення повторюються цілком, а простір між ними рівномірно розподіляється (без обрізання).
+   - round: зображення автоматично масштабуються (трохи стискаються або розтягуються), 
+     щоб повністю заповнити простір без обрізання та зайвих пробілів.
+*/
+
+.size-block {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #2b6cb0;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-image: url('background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.bg-contain { background-size: contain; } 
+.bg-cover { background-size: cover; }      
+
+.scroll-block {
+    width: 100%;
+    max-height: 150px;
+    overflow: auto;
+    border: 2px solid #2b6cb0;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-color: #fff;
+}
+
+.att-scroll { background-attachment: scroll; }
+.att-local { background-attachment: local; }
+
+/* 
+   ПОЯСНЕННЯ:
+   - background-attachment: scroll — фон прикріплений до самого елемента (блоку), 
+     тому при прокручуванні тексту всередині блоку фон стоїть на місці, а текст їде поверх нього.
+   - background-attachment: local — фон прикріплений до вмісту елемента, 
+     тому під час прокручування тексту всередині блоку фон рухається разом із цим текстом.
+*/
