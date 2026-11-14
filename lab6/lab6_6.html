@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 6 - Попап меню</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-nav">
+            <a href="#" class="header-link" tabindex="0">Mail</a>
+            <a href="#" class="header-link" tabindex="0">Images</a>
+
+            <input type="checkbox" id="popup-toggle" class="popup-checkbox">
+     
+            <label for="popup-toggle" class="popup-button" tabindex="0" title="Додатки">
+                <span class="material-icons">apps</span>
+            </label>
+
+            <a href="#" class="header-link icon-link" tabindex="0" title="Сповіщення">
+                <span class="material-icons">notifications</span>
+            </a>
+            <a href="#" class="header-link user-avatar" tabindex="0" title="Профіль">
+                <span class="material-icons">account_circle</span>
+            </a>
+
+            <div class="popup-container">
+                
+    
+                <input type="checkbox" id="more-toggle" class="more-checkbox">
+
+                <div class="popup-content" tabindex="0">
+                    
+                    <div class="popup-grid">
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-calendar">calendar_today</span>
+                            <span class="app-title">Calendar</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-mail">email</span>
+                            <span class="app-title">Mail</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-news">article</span>
+                            <span class="app-title">News</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-map">place</span>
+                            <span class="app-title">Map</span>
+                        </a>
+                        <a href="#" class="app-item active-item" tabindex="0">
+                            <span class="material-icons app-icon icon-files">folder</span>
+                            <span class="app-title">Files</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-contacts">contacts</span>
+                            <span class="app-title">Contacts</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-translate">translate</span>
+                            <span class="app-title">Translate</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-videos">play_circle_filled</span>
+                            <span class="app-title">Videos</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-search">search</span>
+                            <span class="app-title">Search</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-photo">collections</span>
+                            <span class="app-title">Photo</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-apps">grid_view</span>
+                            <span class="app-title">Apps</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-doc">description</span>
+                            <span class="app-title">Document</span>
+                        </a>
+                    </div>
+
+                    <div class="popup-grid more-grid">
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-chat">chat</span>
+                            <span class="app-title">Chat</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-school">school</span>
+                            <span class="app-title">Classroom</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-star">star</span>
+                            <span class="app-title">Collection</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-mars">public</span>
+                            <span class="app-title">Mars</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-blogs">rss_feed</span>
+                            <span class="app-title">Blogs</span>
+                        </a>
+                        <a href="#" class="app-item" tabindex="0">
+                            <span class="material-icons app-icon icon-promos">campaign</span>
+                            <span class="app-title">Promos</span>
+                        </a>
+                    </div>
+
+                </div>
+
+       
+                <label for="more-toggle" class="popup-more-button" tabindex="0">
+                    <span class="more-text-default">More</span>
+                    <span class="more-text-active">Even more from Kottans</span>
+                </label>
+
+            </div>
+        </div>
+    </header>
+
+</body>
+</html>
