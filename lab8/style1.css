@@ -1,0 +1,133 @@
+:root {
+    --bg-color: #ffffff;
+    --card-bg: #ffffff;
+    --border-color: #cccccc;
+    --text-color: #000000;
+    --subtext-color: #333333;
+    --btn-bg: #808080;
+    --btn-hover: #666666;
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    --gap-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+.cards-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap-size);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-wide {
+    grid-column: span 2;
+}
+
+.card-wide img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+}
+
+.card:not(.card-wide) img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.85rem;
+    color: var(--subtext-color);
+    line-height: 1.4;
+    margin-bottom: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.card-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--btn-bg);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    text-decoration: none;
+    padding: 9px 12px;
+    margin-top: auto;
+    transition: background-color 0.2s ease;
+}
+
+.card-btn:hover {
+    background-color: var(--btn-hover);
+}
+
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-wide {
+        grid-column: span 2;
+    }
+
+    .card-wide img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-wide {
+        grid-column: span 1;
+    }
+
+    .card-wide img,
+    .card:not(.card-wide) img {
+        height: 200px;
+    }
+}
